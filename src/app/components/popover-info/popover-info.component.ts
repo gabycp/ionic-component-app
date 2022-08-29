@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-popover-info',
@@ -9,8 +10,20 @@ export class PopoverInfoComponent implements OnInit {
 
   items= Array(20);
 
-  constructor() { }
+  constructor( private popoverCtrl: PopoverController ) { }
 
   ngOnInit() {}
+
+  onClick(pos: number){
+
+    this.popoverCtrl.dismiss({
+
+      item: pos
+
+    });
+    //console.log(pos);
+    
+
+  }
 
 }
