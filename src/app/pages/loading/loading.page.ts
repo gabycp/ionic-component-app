@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-loading',
   templateUrl: './loading.page.html',
